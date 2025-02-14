@@ -1,0 +1,25 @@
+#myButton:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+body {
+    color: white;
+    height: 50vh;
+    width: 100vw;
+}
+
+.day-night {
+   display: flex;
+   flex-direction: column;
+   width: 100vw;
+   align-items: flex-end;
+   padding: 5px;
+}
+
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

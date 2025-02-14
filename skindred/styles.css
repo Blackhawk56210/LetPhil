@@ -1,0 +1,262 @@
+body {
+    background-image: linear-gradient(0deg, gray 20%, #2c5bc5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: serif, sans-serif;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 12%; /* Ensure content isn't hidden by navbar */
+  }
+  
+  .box {
+    box-sizing: content-box;
+    display: block;
+    margin-top: 175px;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12%;
+    border: 0;
+    margin: 0;
+  }
+  
+  
+  .navbar-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .navbar-item {
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+    margin: 25px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    padding-left: 0 20px;
+    cursor: pointer;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    align-items: center;
+    position: relative;
+    top: -90px;
+    flex-direction: row;
+  }
+  
+  .navbar-right a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  a, u {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: cyan;
+    transition: color 1s ease;
+  }
+  
+  /* Social Icon Styling */
+  .fa-instagram {
+    background-image: linear-gradient(45deg, #F58529, #D22B77, #8134AF, #3C8DAD);
+    border-radius: 20%;
+    padding: 4px;
+  }
+  
+  .fa-square-facebook {
+    color: #1877F2;
+  }
+  
+  .navbar-right i {
+    margin-right: 8px;
+  }
+  
+  
+  .Profile-gabe, .Profile-mitch, .Profile-jenny, .Profile-alex {
+    background: black;
+    color: white;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    float: left;
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Profile-gabe {
+    top: 70%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Profile-mitch {
+    top: 70%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Profile-jenny {
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Profile-alex {
+    top: 70%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Profile-gabe a, .Profile-mitch a, .Profile-jenny a, .Profile-alex a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .Profile-gabe i, .Profile-mitch i, .Profile-jenny i, .Profile-alex i {
+    margin-right: 8px;
+  }
+  
+  .Profile-gabe, .Profile-mitch, .Profile-jenny, .Profile-alex {
+    display: block;
+    text-align: center;
+    height: 458.8px;
+  }
+  
+  .Profile-gabe, .Profile-mitch, .Profile-jenny, .Profile-alex a {
+    margin-top: auto;
+  }
+  
+  
+  .fa-instagram, .fa-square-facebook {
+    font-size: 1.5rem;
+  }
+  
+  .Gabe-image, .jenny-image, .alex-image {
+    width: 85%;
+    height: auto;
+    margin-left: 24px;
+  }
+  
+  .alex-image{
+    height: 255px;
+  }
+
+  .mitch-image {
+    width: 85%;
+    height: 310px;
+    margin-left: 24px;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+  }
+  
+  button, a:hover {
+    color: cyan;
+  }
+  
+  button a, u {
+    color: white;
+  }
+  
+  h1 {
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  
+  
+  .shop-front {
+    position: absolute;
+    top: 24.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .Home, .main-text, .Artists {
+      width: 30%;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #000;
+  }
+  
+  
+  .main-text{
+    height: 50px;
+    width: 30%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Artists{
+    height: 50px;
+    width: 30%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .main-text {
+    background: gray;
+    color: white;
+  }
