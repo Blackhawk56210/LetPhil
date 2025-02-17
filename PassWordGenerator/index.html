@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Random Password Generator</title>
 </head>
 <body>
  <div id="container">
-    <h1>Random Password Generator</h1>      
-    <button id="generate" >Generate</button>
+    <div id="header">
+     <button id="generate" >Generate</button>
+     <h1>Random Password</h1>  
+    </div>
+    <div id="length">
+      <label for="slider">Password length</label>
+      <input type="range" id="length-selector" min="8" max="12" value="8" step="2">
+      <span id="sliderValue">8-12</span>
+      <datalist id="tickmarks">
+        <option value="8"></option>
+        <option value="10"></option>
+        <option value="12"></option>
+      </datalist>
+    </div>
     <p id="output"></p>
-    <!--add clear button/local storage-->
-    <button id="Clear">Clear</button>
  </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
