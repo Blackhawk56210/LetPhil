@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(180deg, #4169e1 65%, #B8C7F4 35%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.generate {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+}
