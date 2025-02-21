@@ -2,7 +2,7 @@
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 //index
-const passwordLength = 12;
+const passwordLength = 8;
 const randomIndex = Math.floor(Math.random() * characters.length);
 const randomCharacters = characters[randomIndex];
 const slider = document.getElementById("lengthSlider");
@@ -22,20 +22,20 @@ function generateRandomPassword(passwordLength) {
 
 //password Generator button
 document.getElementById("generate").addEventListener("click", () => {
- const password = generateRandomPassword(12);
+ const password = generateRandomPassword(passwordLength);
  document.getElementById("output").textContent = password;
 });
 
 //update length display when slider moves
-slider.addEventListener("input", () => {
-  LengthDisplay.textContent = slider.value;
+slider.addEventListener("click", () => {
+  lengthDisplay.textContent = slider.value;
 });
 
 generateButton.addEventListener("click", () => {
   const passwordLength = slider.value;
   const password = generateRandomPassword(passwordLength);
   output.textContent = password;
-})
+});
 
 
 //length-selector tickmarks

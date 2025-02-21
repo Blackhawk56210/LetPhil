@@ -13,6 +13,15 @@ body {
     gap: 15px; /* Space between the button and heading */
 }
 
+.container {
+    border: 3px solid black;
+}
+
+input[type="range"] {
+    cursor: grab;
+    
+}
+
 h1 {
     margin: 0; /* Removes default margin */
     white-space: nowrap; /* Prevents wrapping */

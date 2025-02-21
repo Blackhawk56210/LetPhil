@@ -7,7 +7,7 @@
     <title>Random Password Generator</title>
 </head>
 <body>
- <div id="container">
+ <div class="container">
     <div id="header">
      <button id="generate" >Generate</button>
      <h1>Random Password</h1>  
@@ -15,14 +15,21 @@
     <div id="length">
       <label for="slider">Password length</label>
       <input type="range" id="length-selector" min="8" max="12" value="8" step="2">
+      <datalist>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </datalist>
       <span id="sliderValue">8-12</span>
-      <datalist id="tickmarks">
+      <!--<datalist id="tickmarks">
         <option value="8"></option>
         <option value="10"></option>
         <option value="12"></option>
-      </datalist>
+      </datalist>-->
     </div>
-    <p id="output"></p>
+    <p id="output"></p><!--add that weird little copy symbol that you can click on-->
  </div>
     <script src="script.js"></script>
 </body>
