@@ -29,6 +29,8 @@ title {
 
 img{
     width: 45%;
+    position: absolute;
+    cursor :grab;
 }
 
 
