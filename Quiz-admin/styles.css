@@ -1,0 +1,17 @@
+body {
+    height: 50vh;
+    width: 75vw;
+}
+
+.form-container {
+    display: flex;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.preview-container {
+    display: flex;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+}
