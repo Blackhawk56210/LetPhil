@@ -18,3 +18,5 @@ function saveQuestion() {
 function saveToLocalStorage (choicesArray) {
     
 }
+
+console.log('hello');
