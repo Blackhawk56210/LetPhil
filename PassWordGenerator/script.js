@@ -9,6 +9,7 @@ const slider = document.getElementById("lengthSlider");
 const lengthDisplay = document.getElementById("lengthValue");
 const generateButton = document.getElementById("generate");
 const output = document.getElementById("output");
+const lengthSelector = document.querySelector("#length-selector")
 
 //random password Generation
 function generateRandomPassword(passwordLength) {
@@ -27,15 +28,28 @@ document.getElementById("generate").addEventListener("click", () => {
 });
 
 //update length display when slider moves
-slider.addEventListener("click", () => {
-  lengthDisplay.textContent = slider.value;
-});
+// slider.addEventListener("click", () => {
+//   lengthDisplay.textContent = slider.value;
+// });
 
 generateButton.addEventListener("click", () => {
-  const passwordLength = slider.value;
+  const passwordLength = lengthSelector.value;
   const password = generateRandomPassword(passwordLength);
   output.textContent = password;
 });
+
+//function to get length of password
+
+
+
+function sliderChange(){
+  length = lengthSelector.value;
+  console.log(length);
+  passwordLength = lengthSelector.value
+}
+
+lengthSelector.addEventListener("click",sliderChange)
+
 
 
 //length-selector tickmarks
