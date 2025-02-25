@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <div>
+      <select type="text" id="product-name" placeholder="Choose product">
+        <option value="default" selected disabled>Select a product</option>
+        <option value="underwear">Underwear</option>
+        <option value="shirt">Shirt</option>
+        <option value="pants">Pants</option>
+        <option value="shoes">Shoes</option>
+        </select>
+      <input type="number" id="product-price" placeholder="Enter price" />
+      <button onclick="addProduct()">Add to Cart</button>
+    </div>
+
+    <ul id="cart-list"></ul>
+
+    <h2>Total: $<span id="total-price">0</span></h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>
